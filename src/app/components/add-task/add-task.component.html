@@ -1,0 +1,20 @@
+<main>
+    <form class="add-form" [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+        <div class="form-control">
+            <label for="task">Task :</label>
+            <input type="text" formControlName="text" placeholder="Enter Task here">
+            <small class="text-danger" *ngIf="form['text'].touched && !form['text'].valid">*This field is
+                required</small>
+        </div>
+        <div class="form-control">
+            <label for="day">Day & Time :</label>
+            <input type="text" formControlName="day" placeholder="Day and Time">
+            <small class="text-danger" *ngIf="form['day'].touched && !form['day'].valid">*This field is required</small>
+        </div>
+        <div class="form-control-check">
+            <label for="reminder">Set Reminder :</label>
+            <input type="checkbox" formControlName="reminder">
+        </div>
+        <button class="btn btn-block" type="submit" [disabled]="taskForm.invalid">Save Task</button>
+    </form>
+</main>
