@@ -1,4 +1,4 @@
-<main>
+<main *ngIf="showAdd">
     <form class="add-form" [formGroup]="taskForm" (ngSubmit)="onSubmit()">
         <div class="form-control">
             <label for="task">Task :</label>

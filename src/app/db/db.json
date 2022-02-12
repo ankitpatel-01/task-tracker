@@ -10,25 +10,19 @@
       "id": 2,
       "text": "Meeting at School",
       "day": "May 6th at 1:30pm",
-      "reminder": false
-    },
-    {
-      "id": 3,
-      "text": "Food Shopping",
-      "day": "May 7th at 12:30pm",
       "reminder": true
     },
     {
-      "text": "Angular Practice",
-      "day": "12 Feb",
-      "reminder": false,
-      "id": 4
+      "text": "Angular Task",
+      "day": "Feb 12th at 10:20pm",
+      "reminder": true,
+      "id": 3
     },
     {
-      "text": "Angular Practice 3",
-      "day": "12 Feb",
-      "reminder": true,
-      "id": 5
+      "text": "Test",
+      "day": "12 feb",
+      "reminder": false,
+      "id": 4
     }
   ]
 }
